@@ -1,0 +1,21 @@
+
+    <p class="headermain"><img src="../../../assets/BookCover.png"alt="" class="mainimg" style="margin-right: 20px; margin-left: 5px; margin-top: 2px; margin-bottom: 2px;"/>BOOK STORE REGISTRATION</p> 
+    <div class="component">
+        <div class="form-head">
+          <div class="form-box">
+            <div class="type" fxLayout="row">
+            </div>
+            <button type="button" class="toggle-btn" routerLink="/login"><strong>LOGIN</strong></button>
+            <button type="button" class="toggle-btn" ><strong>SIGNUP</strong></button>
+            <hr id="Indicator">
+          </div>
+          <form id="signup" class="input-group" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    
+              <input type="text" class="input-field" id="name" placeholder="Name" formControlName="fullName" required>
+              <input type="text" class="input-field" placeholder="Email" formControlName="email" required>
+              <input type="text" class="input-field" placeholder="Password" formControlName="password" required>
+              <input type="text" class="input-field" placeholder="Mobile No" formControlName="mobileNumber" required>
+              <button type="submit" class="submit-btn">Sign Up</button>
+          </form>
+        </div>
+          
