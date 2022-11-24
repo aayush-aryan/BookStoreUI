@@ -1,0 +1,59 @@
+<div style="width: 100%; height: 100%;">
+    <mat-toolbar class="tool" fxLayout="row" fxLayoutAlign="space-between center">
+        <div class="titleText" fxLayout="row" fxLayoutGap="1%">
+
+            <a id="move" style="color: white; padding-top: 1.7%; "><img src="../../../assets/BookCover.png" /></a>
+        </div>
+        <div>
+            <a style="color: white; font-size: large; padding-top: 1.7%; padding-left: 8%;">BookStore</a>
+        </div>
+
+        <mat-card class="search-mat-card" fxLayout="row" fxLayoutAlign="space-around center" >
+            <button mat-icon-button style="background-color: white;border:white;padding: 1px;">
+                <mat-icon class="searchIcon">search</mat-icon>
+            </button>
+            <input class="searchInput" type="text" name="search" placeholder="Search.." />
+        </mat-card>
+        <button class="Menu" class="pro" mat-button [matMenuTriggerFor]="menu">
+            <mat-icon class="searchProfile">perm_identity</mat-icon><div>Profile</div>
+        </button>
+        <button class="cart"  mat-icon-button matTooltip="Cart">
+            
+            <mat-icon>
+                shopping_cart</mat-icon><div>cart</div>
+        </button>
+       
+        <mat-menu #menu="matMenu" style="margin-left: 1px; margin-right: 1px;">
+            <h3 style="text-align:center">Welcome!</h3>
+            <p style="text-align:center">To access account <br>and manage orders</p>
+            <button mat-menu-item >
+                <div style="text-align:center" >
+                    <button mat-button class="login" style="background-color:transparent; border:transparent" (click)="Logout()">logout</button>
+                </div>
+            </button>
+
+            <mat-divider></mat-divider>
+
+            <div style="text-align:center" >
+                <button mat-button class="Orders" style="background-color:transparent; border:transparent">MyOrders
+                    <mat-icon>shopping_cart</mat-icon>
+                </button>
+                <div style="text-align:center">
+                    <button mat-button class="Orders"style="background-color:transparent; border:transparent">MyWishlist
+                        <mat-icon style="background-color:white;">favorite</mat-icon>
+                    </button>
+                </div>
+                <!-- <div style="text-align:center">
+                    <button mat-button class="Orders1">AddBookpage
+                        <img class="admin" src="../../../assets/Image 11@2x.png" />
+                    </button>
+                </div> -->
+            </div>
+        </mat-menu>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+
+
+    <div class="footeralign">
+        Copyright &copy; 2022 Bookstore Private Limited All Rights Reserved
+    </div>

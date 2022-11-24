@@ -10,6 +10,15 @@ import {MatRadioModule} from '@angular/material/radio';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { LoginComponent } from './components/login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { GetallbooksComponent } from './components/getallbooks/getallbooks.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatCardModule} from '@angular/material/card';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule } from '@angular/material/input';
 
 //import {}
 
@@ -17,7 +26,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   declarations: [
     AppComponent,
     RegisterComponent,
-    LoginComponent
+    LoginComponent,
+    DashboardComponent,
+    GetallbooksComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +38,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HttpClientModule,
     MatRadioModule,
     MatSnackBarModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatDividerModule,
+    MatCardModule,
+    MatMenuModule,
+    MatFormFieldModule,
+    MatInputModule
+
 
   ],
   providers: [],

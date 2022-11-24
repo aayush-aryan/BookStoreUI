@@ -31,4 +31,4 @@ export class UserService {
     //return this.httpService.postService(`User/login?Email=${reqdata.Email}&Password=${reqdata.Password}`, reqdata, false, header)
     return this.httpService.postService('User/login?Email=log2aayusharyan%40gmail.com&Password=aayush12', reqdata, false, header)
   }
-}
+}  
