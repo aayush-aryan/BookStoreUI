@@ -4,6 +4,7 @@ import { CartComponent } from './components/cart/cart.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { GetallbooksComponent } from './components/getallbooks/getallbooks.component';
 import { LoginComponent } from './components/login/login.component';
+import { OrderComponent } from './components/order/order.component';
 import { RegisterComponent } from './components/register/register.component';
 import { WishlistComponent } from './components/wishlist/wishlist.component';
 
@@ -16,6 +17,7 @@ const routes: Routes = [
     {path: 'GetAllbooks', component:GetallbooksComponent},
     {path:'wish', component:WishlistComponent},
     {path:'cart',component:CartComponent},
+    {path:'order', component:OrderComponent},
 ],
   },
 ];

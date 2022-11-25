@@ -25,6 +25,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 //import {FlexLayoutModule} from '.angular/flex-layout'
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatSelectModule} from '@angular/material/select';
+import { OrderComponent } from './components/order/order.component';
 
 //import {}
 
@@ -36,7 +37,8 @@ import {MatSelectModule} from '@angular/material/select';
     DashboardComponent,
     GetallbooksComponent,
     WishlistComponent,
-    CartComponent
+    CartComponent,
+    OrderComponent
   ],
   imports: [
     BrowserModule,

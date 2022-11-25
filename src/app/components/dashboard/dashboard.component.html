@@ -5,7 +5,7 @@
             <a id="move" style="color: white; padding-top: 1.7%; "><img src="../../../assets/BookCover.png" /></a>
         </div>
         <div>
-            <a style="color: white; font-size: large; padding-top: 1.7%; padding-left: 8%;">BookStore</a>
+            <a style="color: white; font-size: large; padding-top: 1.7%; padding-left: 8%;" (click)=" GetAllBook()">BookStore</a>
         </div>
 
         <mat-card class="search-mat-card" fxLayout="row" fxLayoutAlign="space-around center" >
@@ -17,9 +17,9 @@
         <button class="Menu" class="pro" mat-button [matMenuTriggerFor]="menu">
             <mat-icon class="searchProfile">perm_identity</mat-icon><div>Profile</div>
         </button>
-        <button class="cart"  mat-icon-button matTooltip="Cart">
+        <button class="cart"  mat-icon-button matTooltip="Cart" (click)=" GetAllCart()">
             
-            <mat-icon>
+            <mat-icon >
                 shopping_cart</mat-icon><div>cart</div>
         </button>
        
@@ -27,7 +27,7 @@
             <h3 style="text-align:center">Welcome!</h3>
             <p style="text-align:center">To access account <br>and manage orders</p>
             <button mat-menu-item >
-                <div style="text-align:center" >
+                <div style="text-align:center;">
                     <button mat-button class="login" (click)="Logout()">logout</button>
                 </div>
             </button>
@@ -35,11 +35,11 @@
             <mat-divider></mat-divider>
 
             <div style="text-align:center" >
-                <button mat-button class="Orders" style="background-color:transparent; border:transparent">MyOrders
+                <button mat-button class="Orders" style="background-color:transparent; border:transparent" (click)=" wishlist()">MyOrders
                     <mat-icon>shopping_cart</mat-icon>
                 </button>
                 <div style="text-align:center">
-                    <button mat-button class="Orders"style="background-color:transparent; border:transparent">MyWishlist
+                    <button mat-button class="Orders"style="background-color:transparent; border:transparent" (click)=" wishlist()">MyWishlist
                         <mat-icon style="background-color:white;">favorite</mat-icon>
                     </button>
                 </div>
