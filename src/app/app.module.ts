@@ -19,6 +19,12 @@ import {MatCardModule} from '@angular/material/card';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule } from '@angular/material/input';
+import { WishlistComponent } from './components/wishlist/wishlist.component';
+import { CartComponent } from './components/cart/cart.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
+//import {FlexLayoutModule} from '.angular/flex-layout'
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatSelectModule} from '@angular/material/select';
 
 //import {}
 
@@ -28,7 +34,9 @@ import {MatInputModule } from '@angular/material/input';
     RegisterComponent,
     LoginComponent,
     DashboardComponent,
-    GetallbooksComponent
+    GetallbooksComponent,
+    WishlistComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +53,10 @@ import {MatInputModule } from '@angular/material/input';
     MatCardModule,
     MatMenuModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+   FlexLayoutModule,
+   MatExpansionModule,
+   MatSelectModule
 
 
   ],
