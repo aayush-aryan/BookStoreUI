@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-dashboard',
@@ -8,11 +9,22 @@ import { Router } from '@angular/router';
 })
 export class DashboardComponent implements OnInit {
   fullName:any
-  constructor(private route:Router) { 
+   showContainer: boolean=true;
+
+  constructor(private route:Router,public breakpointObserver: BreakpointObserver) { 
     this.fullName = localStorage.getItem('fullName');
   }
 
   ngOnInit(): void {
+    // this.breakpointObserver
+    //   .observe(['(min-width: 400px)'])
+    //   .subscribe((state: BreakpointState) => {
+    //     if (state.matches) {
+    //       this.showContainer = true;
+    //     } else {
+    //       this.showContainer = false;
+    //     }
+    //   });
   }
 
   Logout() {

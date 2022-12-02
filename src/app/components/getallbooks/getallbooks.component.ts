@@ -38,8 +38,8 @@ export class GetallbooksComponent implements OnInit {
     console.log("book id", book.bookId);
     
     localStorage.setItem('bookId', book.bookId);
-    // this.router.navigateByUrl('dashboard/quickview/' + book.bookId)
-    this.router.navigateByUrl('dashboard' + book.bookId)
+     this.router.navigateByUrl('dashboard/quickview/:' + book.bookId)
+    //this.router.navigateByUrl('dashboard' + book.bookId)
 
   }
 

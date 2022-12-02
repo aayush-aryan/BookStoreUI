@@ -51,16 +51,17 @@ export class BookService {
         'Content-Type': 'application/json',
         'Authorization': 'Bearer ' + this.token,
       }),
-
     };
     console.log("ganya", reqdata)
-    return this.httpservice.deleteServices('WishList/DeleteBookinWishList?WishListId=${reqdata.WishListId}', true, header);
+    //return this.httpservice.deleteServices('WishList/DeleteBookinWishList?WishListId=${reqdata.WishListId}', true, header);
+    return this.httpservice.deleteServices(`WishList/DeleteBookinWishList?WishListId=${reqdata.WishListId}`, true, header);
   }
   AddToCart(reqdata: any) {
-    console.log();
+    console.log(reqdata);
     let headerOption = {
       headers: new HttpHeaders({
-        'Content-type': 'application/json-patch+json',
+        //'Content-type': 'application/json-patch+json',
+        'Content-Type': 'application/json',
         'Authorization': 'Bearer ' + this.token
       })
     }
@@ -99,7 +100,28 @@ export class BookService {
       })
     }
     console.log("reqdata")
-    return this.httpservice.deleteServices(`Cart/Delete/${data.CartId}`, true, header)
+   // return this.httpservice.deleteServices(`Cart/Delete/${data.CartId}`, true, header)
+    return this.httpservice.deleteServices(`Cart/DeletebyCartId?CartId=${data.CartId}`, true, header)
 
   }
+  getAllFeedback(data: any) {
+    let header = {
+      headers: new HttpHeaders({
+        'Content-type': 'application/json',
+        'Authorization': 'Bearer ' + this.token
+      })
+    }
+    return this.httpservice.getService(`Feedback/GetFeedback?bookId=${data.bookId}`, true, header);
+  }
+  AddFeddback(reqdata: any) {
+    console.log(reqdata);
+    let header = {
+      headers: new HttpHeaders({
+        'Content-type': 'application/json',
+        'Authorization': 'Bearer ' + this.token
+      })
+    }
+    return this.httpservice.postService('Feedback/AddFeedback', reqdata, true, header);
+  }
+
 }

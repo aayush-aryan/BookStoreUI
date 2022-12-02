@@ -1,11 +1,11 @@
-<div style="width: 100%; height: 100%;">
+<div >
     <mat-toolbar class="tool" fxLayout="row" fxLayoutAlign="space-between center">
-        <div class="titleText" fxLayout="row" fxLayoutGap="1%">
+        <div class="titleText" fxLayout="row" fxLayoutGap="1%" style="color: white; font-size: large; padding-top: 1.7%; padding-left: 8%;">
 
-            <a id="move" style="color: white; padding-top: 1.7%; "><img src="../../../assets/BookCover.png" /></a>
-        </div>
-        <div>
-            <a style="color: white; font-size: large; padding-top: 1.7%; padding-left: 8%;" (click)=" GetAllBook()">BookStore</a>
+            <a ><img src="../../../assets/BookCover.png" /></a>
+        <!-- </div>
+        <div > -->
+            <a  (click)=" GetAllBook()">BookStore</a>
         </div>
 
         <mat-card class="search-mat-card" fxLayout="row" fxLayoutAlign="space-around center" >
@@ -35,7 +35,7 @@
             <mat-divider></mat-divider>
 
             <div style="text-align:center" >
-                <button mat-button class="Orders" style="background-color:transparent; border:transparent" (click)=" wishlist()">MyOrders
+                <button mat-button class="Orders" style="background-color:transparent; border:transparent" (click)=" GetAllCart()">MyOrders
                     <mat-icon>shopping_cart</mat-icon>
                 </button>
                 <div style="text-align:center">
@@ -43,11 +43,6 @@
                         <mat-icon style="background-color:white;">favorite</mat-icon>
                     </button>
                 </div>
-                <!-- <div style="text-align:center">
-                    <button mat-button class="Orders1">AddBookpage
-                        <img class="admin" src="../../../assets/Image 11@2x.png" />
-                    </button>
-                </div> -->
             </div>
         </mat-menu>
     </mat-toolbar>

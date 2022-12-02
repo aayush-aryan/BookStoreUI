@@ -12,9 +12,9 @@
                 <mat-expansion-panel-header  #panelH (click)="panelH._toggle()">
                     <mat-panel-description>
                         <mat-form-field appearance="outline" style="margin-bottom: -15px;">
-                            <mat-label style="font-size: 13px;">Bridgelabz Solution LLP</mat-label>
+                            <mat-label style="font-size: 13px;">BridgelabzSolution</mat-label>
                             <mat-select>
-                                <mat-option>Bridgelabz Solution LLP</mat-option>
+                                <mat-option>BridgelabzSolution</mat-option>
                             </mat-select>
                         </mat-form-field>
                     </mat-panel-description>
@@ -49,7 +49,7 @@
                             <button (click)="myRemoveCart(item.cartId)" style="background-color: transparent;border: none;margin-left: 10px;">Remove</button>
                         </div>
 
-
+                        <button class="placeorder" style="color: white;float: right;" (click)="myRemoveCart(item.cartId)" routerLink="/dashboard/order">Place Order</button>
                     </div>
                     <span class="example-spacer"></span>
 
@@ -57,12 +57,27 @@
                 </div>
                 <mat-divider style="margin-top: 10px;"></mat-divider>
             </div>
-            <button class="placeorder" style="color: white;float: right;">Place Order</button>
+            
         </mat-expansion-panel>
 
         <mat-expansion-panel  hideToggle>
             <mat-expansion-panel-header>
                 <mat-panel-title>
-                    Customer Details
+                   <b> Customer Details</b>
                 </mat-panel-title>
+       
             </mat-expansion-panel-header>
+            <div >
+                <table class="tabl">
+                    <tr fxLayoutGap="100px">
+                        <th style="text-align:center;">Email</th>
+                        <th style="text-align:center">Contact us</th>
+                        <th style="text-align:center">Address</th>  
+                    </tr>
+                    <td style="text-align:center">aayush@gmail.com</td>
+                    <td style="text-align:center">+91 2222222222</td>
+                    <td style="text-align:center">Futec<br>
+                        Sector 75<br>Noida 560034</td>
+                </table>
+            </div>
+</mat-expansion-panel>

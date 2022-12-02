@@ -1,5 +1,5 @@
 .bookaligncount{
-    margin-left: 160px; 
+    margin-left: 8%; 
     margin-top: 45px;
   }
   .books{
@@ -30,8 +30,8 @@
     border: 1px solid gainsboro;
     width: 200px;
     height: 315px;
-    margin-left: 190px;;
-    margin-right: 85%;
+    margin: 30px;;
+   // margin-right: 85%;
     //margin: 20px;
   }
   .bookdata:hover{
@@ -146,6 +146,6 @@
     display: flex;
     flex-wrap: wrap;
     flex-grow: 4;
-    margin-left: 80px;
+    margin-left: 6%;
     margin-right: 98px;
   }
