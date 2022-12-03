@@ -39,7 +39,6 @@ export class RegisterComponent implements OnInit {
       else{
         console.log("Enter valid data");
       }  
-
 }
 
 }

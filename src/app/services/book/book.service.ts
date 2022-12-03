@@ -54,7 +54,7 @@ export class BookService {
     };
     console.log("ganya", reqdata)
     //return this.httpservice.deleteServices('WishList/DeleteBookinWishList?WishListId=${reqdata.WishListId}', true, header);
-    return this.httpservice.deleteServices(`WishList/DeleteBookinWishList?WishListId=${reqdata.WishListId}`, true, header);
+    return this.httpservice.deleteServices(`WishList/DeleteBookinWishList?WishListId=${reqdata.wishListId}`, true, header);
   }
   AddToCart(reqdata: any) {
     console.log(reqdata);
